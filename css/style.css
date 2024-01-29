@@ -52,16 +52,16 @@ html body .header .header-inside .contacts .socials {
   width: 120px;
   position: relative;
 }
-html body .header .header-inside .contacts .socials .logo-vk {
+html body .header .header-inside .contacts .socials #logo-vk {
   position: absolute;
   z-index: 3;
 }
-html body .header .header-inside .contacts .socials .logo-yt {
+html body .header .header-inside .contacts .socials #logo-yt {
   position: absolute;
   left: 25%;
   z-index: 2;
 }
-html body .header .header-inside .contacts .socials .logo-tg {
+html body .header .header-inside .contacts .socials #logo-tg {
   position: absolute;
   left: 50%;
   z-index: 1;
@@ -86,6 +86,81 @@ html body .header .header-inside .contacts .number a:hover {
 html body .main .hero {
   height: 900px;
   background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html body .main .hero .hero-inside {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+html body .main .hero .hero-inside .hero-heading {
+  width: 540px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body .main .hero .hero-inside .hero-heading h1 {
+  width: 600px;
+  height: 120px;
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 65px */
+  text-transform: uppercase;
+}
+html body .main .hero .hero-inside .hero-heading p {
+  width: 470px;
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+html body .main .hero .hero-inside .hero-heading .hero-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+html body .main .hero .hero-inside .hero-heading .hero-buttons .hero-button {
+  width: 260px;
+  height: 70px;
+  padding: 20px 34px;
+  justify-content: center;
+  align-items: center;
+  border: 1px #9166F0 solid;
+  border-radius: 5px;
+  background: transparent;
+  color: #9166F0;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+html body .main .hero .hero-inside .hero-heading .hero-buttons .hero-button:hover {
+  width: 260px;
+  height: 70px;
+  padding: 20px 34px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 5px;
+  background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%);
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+html body .main .hero .hero-laptop {
+  position: absolute;
+  right: -75px;
 }
 .container {
   width: 1290px;

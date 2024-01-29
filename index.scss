@@ -58,17 +58,17 @@ html{
                         width: 120px;
                         position: relative;
                         
-                        .logo-vk{
+                        #logo-vk{
                             position: absolute;
                             z-index: 3;
                             
                         }
-                        .logo-yt{
+                        #logo-yt{
                             position: absolute;
                             left: 25%;
                             z-index: 2;
                         }
-                        .logo-tg{
+                        #logo-tg{
                             position: absolute;
                             left: 50%;
                             z-index: 1;
@@ -100,9 +100,86 @@ html{
             .hero{
                 height: 900px;
                 background-color: #000;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
                 .hero-inside{
-                    
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .hero-heading{
+                        width: 540px;
+                        height: 400px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        h1{
+                            width: 600px;
+                            height: 120px;
+                            color: #FFF;
+                            font-family: Ubuntu, sans-serif;
+                            font-size: 50px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 130%; /* 65px */
+                            text-transform: uppercase; 
+                        }
+                        p{
+                            width: 470px;
+                            color: #FFF;
+                            font-family: Ubuntu, sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 160%;
+                        }
+                        .hero-buttons{
+                            display: flex;
+                            justify-content: space-between;
+
+                            .hero-button{
+                                width: 260px;
+                                height: 70px;
+                                padding: 20px 34px;
+                                justify-content: center;
+                                align-items: center;
+                                border: 1px #9166F0 solid;
+                                border-radius: 5px;
+
+                                background: transparent;
+                                color: #9166F0;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 130%
+                            }
+                            .hero-button:hover{
+                                width: 260px;
+                                height: 70px;
+                                padding: 20px 34px;
+                                justify-content: center;
+                                align-items: center;
+                                border: 0;
+                                border-radius: 5px;
+
+                                background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%);
+                                color: #FFF;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 130%
+                            }
+                        }
+                    }
+                }
+                .hero-laptop{
+                    position: absolute;
+                    right: -75px;
                 }
             }
         }
