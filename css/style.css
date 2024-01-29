@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html body .header {
+  background-color: #000;
+  height: 120px;
+}
+html body .header .header-inside {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body .header .header-inside .logo {
+  width: 213px;
+  height: 40px;
+}
+html body .header .header-inside .nav {
+  width: 525px;
+}
+html body .header .header-inside .nav .nav-inside {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+html body .header .header-inside .nav .nav-inside .nav-element a {
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  text-decoration: none;
+}
+html body .header .header-inside .nav .nav-inside .nav-element a:hover {
+  color: #9166F0;
+  text-decoration: underline;
+}
+html body .header .header-inside .contacts {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body .header .header-inside .contacts .socials {
+  height: 46px;
+  width: 120px;
+  position: relative;
+}
+html body .header .header-inside .contacts .socials .logo-vk {
+  position: absolute;
+  z-index: 3;
+}
+html body .header .header-inside .contacts .socials .logo-yt {
+  position: absolute;
+  left: 25%;
+  z-index: 2;
+}
+html body .header .header-inside .contacts .socials .logo-tg {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+html body .header .header-inside .contacts .socials .logo-socials-img {
+  width: 46px;
+  height: 46px;
+}
+html body .header .header-inside .contacts .number a {
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-decoration: none;
+}
+html body .header .header-inside .contacts .number a:hover {
+  color: #9166F0;
+  text-decoration: underline;
+}
+html body .main .hero {
+  height: 900px;
+  background-color: #000;
+}
+.container {
+  width: 1290px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
