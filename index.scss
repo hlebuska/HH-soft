@@ -105,6 +105,7 @@ html{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                position: relative;
 
                 .hero-inside{
                     position: relative;
@@ -329,6 +330,30 @@ html{
                     border-radius: 100%;
                     background: radial-gradient(#546CC1, #aebbe6);
                     filter: blur(20px);
+                }                       
+            }
+            .ticker{
+                position: relative;
+                top: 200px;
+                overflow: hidden;
+                z-index: 10;
+                width: 100%; 
+
+                .ticker-wrapper{
+                    display: flex;
+                  
+                    .ticker-element{
+                        color: #635D6E;                
+                        font-family: Ubuntu;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%; /* 20.8px */
+                        letter-spacing: 0.48px;
+                        z-index: 5;
+                        white-space: nowrap;
+                        animation: ticker 5s linear infinite;
+                    }
                 }
             }
         }
@@ -343,4 +368,13 @@ html{
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+}
+
+@keyframes ticker {
+    from{
+        transform: translateZ(0);
+    }
+    to{
+        transform: translate3d(-100%, 0, 0);
+    }
 }
