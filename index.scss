@@ -98,8 +98,10 @@ html{
         }
         .main{
             .hero{
+                overflow: hidden;
                 height: 900px;
                 background-color: #000;
+                z-index: -10;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -108,6 +110,7 @@ html{
                     position: relative;
                     display: flex;
                     justify-content: space-between;
+                    z-index: 10 ;
 
                     .hero-heading{
                         width: 540px;
@@ -146,27 +149,26 @@ html{
                                 padding: 20px 34px;
                                 justify-content: center;
                                 align-items: center;
-                                border: 1px #9166F0 solid;
-                                border-radius: 5px;
 
-                                background: transparent;
+                                border: 1px #55349b solid;
+                                border-radius: 5px;
+                                background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%);
+                                background-size: 0;
+                                background-repeat: no-repeat;
+                                transition: background-size .5s;
                                 color: #9166F0;
                                 font-family: Ubuntu, sans-serif;
                                 font-size: 18px;
                                 font-style: normal;
                                 font-weight: 700;
-                                line-height: 130%
+                                line-height: 130%;
+                                cursor: pointer;
                             }
                             .hero-button:hover{
-                                width: 260px;
-                                height: 70px;
-                                padding: 20px 34px;
-                                justify-content: center;
-                                align-items: center;
-                                border: 0;
-                                border-radius: 5px;
-
-                                background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%);
+                                border: 1px #9166F0 solid;
+                                background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%, #210C51 10.77%);
+                                background-size: 100%;
+                                background-repeat: no-repeat;
                                 color: #FFF;
                                 font-family: Ubuntu, sans-serif;
                                 font-size: 18px;
@@ -174,12 +176,159 @@ html{
                                 font-weight: 700;
                                 line-height: 130%
                             }
+                            #discuss-project-button{
+                                border: 0;
+                                background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8% );
+                                
+                                color: #FFF;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 130%;
+                                transition: .5s;
+                            }
+                            #discuss-project-button:hover{
+                                border: 0;
+                                background-color: #ffffff00;
+                                
+                                background-position: 260px;
+                                color: #FFF;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 18px; 
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 130%;
+                            }
                         }
                     }
                 }
                 .hero-laptop{
                     position: absolute;
                     right: -75px;
+                }
+                .hero-background1{
+                    width: 4000px;
+                    height: 600px;
+                    position: absolute;
+                    background: linear-gradient(267deg, #000 -3.62%, #010631 103.62%);
+                    z-index: -5;
+
+                    top:-100px;
+                    left: -1000px;
+                    transform: rotate(-10.219deg);
+                }
+                .hero-background2{
+                    width: 4000px;
+                    height: 600px;
+                    position: absolute;
+                    background: linear-gradient(268deg, rgba(201, 69, 247, 0.20) 20.33%, rgba(69, 129, 247, 0.00) 89.01%);
+                    z-index: -4;
+
+                    top: 300px;
+                    left: -1000px;
+                    transform: rotate(-12.219deg);
+                }
+                .hero-background3{
+                    width: 4000px;
+                    height: 600px;
+                    position: absolute;
+                    background: linear-gradient(272deg, #000211be 3.69%, #310156c0 116.09%);
+                    z-index: -3;
+
+                    top: 600px;
+                    left: -1000px;
+                    transform: rotate(5.219deg);
+                }               
+                #circle1{
+                    position: absolute;
+                    bottom: -75px;
+                    left: 800px;
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 100%;
+                    background: linear-gradient(176deg, #546CC1 19.68%, #8798D2 96.85%);     
+                    box-shadow: 0px 4px 70px 0px rgba(155, 215, 195, 0.80);
+                }
+                #circle2{
+                    position: absolute;
+                    bottom: -130px;
+                    left: 1200px;
+
+                    width: 59px;
+                    height: 59px;
+                    border-radius: 100%;
+                    background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #C2A5D1 0%, #B590CD 16.12%, #9A66C5 42.44%, #583C99 100%);
+                    filter: blur(2.5px);
+                }
+                #circle3{
+                    position: absolute;
+                    bottom: 80px;
+                    right: -70px;
+                    z-index: -1;
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 100%;
+                    background: linear-gradient(176deg, #8EA2E7 19.68%, #BA87D2 96.85%);
+                    box-shadow: 0px 4px 70px 0px rgba(155, 215, 195, 0.80);
+                }
+                #circle4{
+                    position: absolute;
+                    top: 100px;
+                    right: -200px;
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 100%;
+                    background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #A5C1D1 0%, #909ACD 16.12%, #6675C5 42.44%, #3C6199 100%);
+                    filter: blur(3px);
+                }
+
+                #circle5{
+                    position: absolute;
+                    top: -100px;
+                    right: 150px;
+
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 100%;
+                    background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #A5C1D1 0%, #909ACD 16.12%, #6675C5 42.44%, #3C6199 100%);
+                    filter: blur(3px);
+                }
+
+                #circle6{
+                    position: absolute;
+                    top: -50px;
+                    right: 510px;
+
+                    width: 79px;
+                    height: 79px;
+                    border-radius: 100%;
+                    background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #C2A5D1 0%, #B590CD 16.12%, #9A66C5 42.44%, #583C99 100%);
+                    filter: blur(12.5px);
+                }
+
+                #circle7{
+                    position: absolute;
+                    top: 200px;
+                    left: -130px;
+
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                    background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #C2A5D1 0%, #B590CD 16.12%, #9A66C5 42.44%, #583C99 100%);
+                    filter: blur(2.5px);
+                }
+
+                #circle8{
+                    position: absolute;
+                    top: -200px;
+                    left: -200px;
+
+                    width: 101px;
+                    height: 101px;
+                    border-radius: 100%;
+                    background: radial-gradient(#546CC1, #aebbe6);
+                    filter: blur(20px);
                 }
             }
         }
