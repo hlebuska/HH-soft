@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -152,6 +153,7 @@ html body .main .hero .hero-inside .hero-heading .hero-buttons .hero-button {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+  filter: drop-shadow(3px 5px 10px rgba(145, 102, 240, 0.25));
 }
 html body .main .hero .hero-inside .hero-heading .hero-buttons .hero-button:hover {
   border: 1px #9166F0 solid;
@@ -402,7 +404,7 @@ html body .main .services .services-inside .grid-container .service-card {
   flex-direction: column;
   justify-content: space-between;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: transform 0.1s;
+  transition: transform 0.25s;
 }
 html body .main .services .services-inside .grid-container .service-card img {
   position: absolute;
@@ -475,6 +477,272 @@ html body .main .services .services-inside .grid-container .service-card:hover {
 }
 html body .main .services .services-inside .grid-container #service-card-4 h3 {
   width: 358px;
+}
+html body .main .we-offer {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+html body .main .we-offer .we-offer-inside {
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+html body .main .we-offer .we-offer-inside h2 {
+  color: #1A1A1A;
+  font-family: Ubuntu, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 60px */
+  text-transform: uppercase;
+}
+html body .main .we-offer .we-offer-inside .we-offer-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body .main .we-offer .we-offer-inside .we-offer-aside .we-offer-list {
+  width: 50%;
+  list-style: none;
+}
+html body .main .we-offer .we-offer-inside .we-offer-aside .we-offer-list .we-offer-list-element {
+  height: 100px;
+  width: 400px;
+  color: #1A1A1A;
+  font-family: Ubuntu, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+html body .main .we-offer .we-offer-inside .we-offer-aside .we-offer-list .we-offer-list-element hr {
+  background: #D9D9D9;
+  width: 560px;
+  height: 2px;
+  border: 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+}
+html body .main .we-offer .we-offer-inside .we-offer-aside .we-offer-list .we-offer-list-element:hover {
+  color: #9166F0;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+html body .main .we-offer .we-offer-inside .we-offer-aside .we-offer-list .we-offer-list-element:hover hr {
+  background-color: #9166F0 !important;
+  width: 600px;
+  height: 2px;
+}
+html body .main .we-offer .we-offer-inside .we-offer-image {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+html body .main .we-offer .we-offer-inside .we-offer-image img {
+  width: 650px;
+}
+html body .main .we-offer .we-offer-inside .we-offer-image .ring {
+  position: absolute;
+  top: 0;
+  height: 650px;
+  width: 650px;
+  border-radius: 100%;
+  border: 1px solid #D9D9D9;
+}
+html body .main .cases {
+  height: 1800px;
+}
+html body .main .cases .cases-inside {
+  height: 1710px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+html body .main .cases .cases-inside .cases-header h2 {
+  color: #1A1A1A;
+  font-family: Ubuntu, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 65px */
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+html body .main .cases .cases-inside .cases-header .cases-header-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+html body .main .cases .cases-inside .cases-header .cases-header-list li {
+  width: 210px;
+  height: 56px;
+  margin: 0 10px;
+}
+html body .main .cases .cases-inside .cases-header .cases-header-list li button {
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  width: 210px;
+  height: 56px;
+  text-decoration: none;
+  color: #BDBDBD;
+  background-color: transparent;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+}
+html body .main .cases .cases-inside .cases-header .cases-header-list li button span {
+  font-family: "Inter", sans-serif;
+}
+html body .main .cases .cases-inside .cases-header .cases-header-list li button:hover {
+  color: #9166F0;
+  border: 1px solid #9166F0;
+}
+html body .main .cases .cases-inside .cases-header .cases-header-list li button:focus {
+  color: #fff;
+  background-color: #9166F0;
+  border: 1px solid #9166F0;
+}
+html body .main .cases .cases-inside .grid-container {
+  display: grid;
+  grid-template-columns: 630px 630px;
+  grid-template-rows: 430px 430px 430px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+html body .main .cases .cases-inside .grid-container .cases-card {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 60px 0px rgba(22, 38, 70, 0.1);
+  display: flex;
+  position: relative;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-image {
+  width: 220px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: url("/images/back-card.svg");
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-image .logo {
+  width: 118px;
+  height: 22px;
+  position: absolute;
+  top: 140px;
+  z-index: 5;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-image h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 136%; /* 24.48px */
+  text-transform: uppercase;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-info {
+  width: 410px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-info h3 {
+  color: #1A1A1A;
+  font-family: Ubuntu, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-info h4 {
+  color: #666;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-info p {
+  color: #1A1A1A;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-info .card-link {
+  display: flex;
+  align-items: center;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-info .card-link .card-link-icon {
+  width: 54px;
+  height: 54px;
+  background-color: #9166F0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-info .card-link .card-link-icon img {
+  transition: 0.5s;
+  width: 28px;
+  height: 28px;
+}
+html body .main .cases .cases-inside .grid-container .cases-card .card-info .card-link a {
+  color: #9166F0;
+  margin-left: 22px;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-decoration: none;
+}
+html body .main .cases .cases-inside .grid-container .cases-card:hover .card-link img {
+  transform: rotate(-90deg);
+}
+html body .main .cases .cases-inside .show-more-button {
+  width: 330px;
+  height: 70px;
+  padding: 20px 34px 21px 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: linear-gradient(276deg, #35187a 8.77%, #9166F0 85.8%);
+  border: 0;
+  transition: 0.5s;
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+html body .main .cases .cases-inside .show-more-button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  background-position: 330px;
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
 }
 .container {
   width: 1290px;
