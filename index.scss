@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 html{
     body{   
         .header{
@@ -101,7 +105,7 @@ html{
                 overflow: hidden;
                 height: 900px;
                 background-color: #000;
-                z-index: -10;
+                z-index: 10;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -150,7 +154,7 @@ html{
                                 padding: 20px 34px;
                                 justify-content: center;
                                 align-items: center;
-
+                            
                                 border: 1px #55349b solid;
                                 border-radius: 5px;
                                 background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%);
@@ -163,11 +167,11 @@ html{
                                 font-style: normal;
                                 font-weight: 700;
                                 line-height: 130%;
-                                cursor: pointer;
+                                    
                             }
                             .hero-button:hover{
                                 border: 1px #9166F0 solid;
-                                background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%, #210C51 10.77%);
+                                background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%);
                                 background-size: 100%;
                                 background-repeat: no-repeat;
                                 color: #FFF;
@@ -175,10 +179,10 @@ html{
                                 font-size: 18px;
                                 font-style: normal;
                                 font-weight: 700;
-                                line-height: 130%
+                                line-height: 130%;
                             }
                             #discuss-project-button{
-                                border: 0;
+                                border: 1px #55349b solid;
                                 background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8% );
                                 
                                 color: #FFF;
@@ -190,7 +194,7 @@ html{
                                 transition: .5s;
                             }
                             #discuss-project-button:hover{
-                                border: 0;
+                                border: 1px #55349b solid;
                                 background-color: #ffffff00;
                                 
                                 background-position: 260px;
@@ -250,6 +254,11 @@ html{
                     border-radius: 100%;
                     background: linear-gradient(176deg, #546CC1 19.68%, #8798D2 96.85%);     
                     box-shadow: 0px 4px 70px 0px rgba(155, 215, 195, 0.80);
+                    animation-name: circle-anim;
+                    animation-duration: 14s;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                    animation-delay: 3s;
                 }
                 #circle2{
                     position: absolute;
@@ -261,6 +270,11 @@ html{
                     border-radius: 100%;
                     background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #C2A5D1 0%, #B590CD 16.12%, #9A66C5 42.44%, #583C99 100%);
                     filter: blur(2.5px);
+                    animation-name: circle-anim;
+                    animation-duration: 21s;
+                    animation-iteration-count: infinite;
+                    animation-direction: reverse;
+                    animation-delay: 1s;
                 }
                 #circle3{
                     position: absolute;
@@ -272,6 +286,11 @@ html{
                     border-radius: 100%;
                     background: linear-gradient(176deg, #8EA2E7 19.68%, #BA87D2 96.85%);
                     box-shadow: 0px 4px 70px 0px rgba(155, 215, 195, 0.80);
+                    animation-name: circle-anim;
+                    animation-duration: 17s;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                    animation-delay: 5s;
                 }
                 #circle4{
                     position: absolute;
@@ -282,6 +301,11 @@ html{
                     border-radius: 100%;
                     background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #A5C1D1 0%, #909ACD 16.12%, #6675C5 42.44%, #3C6199 100%);
                     filter: blur(3px);
+                    animation-name: circle-anim;
+                    animation-duration: 30s;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                    animation-delay: 0s;
                 }
 
                 #circle5{
@@ -294,6 +318,11 @@ html{
                     border-radius: 100%;
                     background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #A5C1D1 0%, #909ACD 16.12%, #6675C5 42.44%, #3C6199 100%);
                     filter: blur(3px);
+                    animation-name: circle-anim;
+                    animation-duration: 11s;
+                    animation-iteration-count: infinite;
+                    animation-direction: reverse;
+                    animation-delay: 8s;
                 }
 
                 #circle6{
@@ -306,6 +335,11 @@ html{
                     border-radius: 100%;
                     background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #C2A5D1 0%, #B590CD 16.12%, #9A66C5 42.44%, #583C99 100%);
                     filter: blur(12.5px);
+                    animation-name: circle-anim;
+                    animation-duration: 17s;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                    animation-delay: 2s;
                 }
 
                 #circle7{
@@ -318,6 +352,11 @@ html{
                     border-radius: 100%;
                     background: radial-gradient(102.63% 102.63% at 31.02% 24.87%, #C2A5D1 0%, #B590CD 16.12%, #9A66C5 42.44%, #583C99 100%);
                     filter: blur(2.5px);
+                    animation-name: circle-anim;
+                    animation-duration: 25s;
+                    animation-iteration-count: infinite;
+                    animation-direction: reverse;
+                    animation-delay: 1s;
                 }
 
                 #circle8{
@@ -330,6 +369,12 @@ html{
                     border-radius: 100%;
                     background: radial-gradient(#546CC1, #aebbe6);
                     filter: blur(20px);
+
+                    animation-name: circle-anim;
+                    animation-duration: 10s;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                    animation-delay: 9s;               
                 }                       
             }
             .ticker{
@@ -344,7 +389,7 @@ html{
                   
                     .ticker-element{
                         color: #635D6E;                
-                        font-family: Ubuntu;
+                        font-family: Ubuntu, sans-serif;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -352,11 +397,132 @@ html{
                         letter-spacing: 0.48px;
                         z-index: 5;
                         white-space: nowrap;
-                        animation: ticker 5s linear infinite;
+                        animation: ticker 15s linear infinite;
+                    }
+                }
+            }
+            .services{
+                height: 1250px;
+                background-color: #FFFFFF;
+
+                .services-inside{
+                    height: 1000px;
+                    display: flex;
+                    flex-direction: column;
+                    
+
+                    h2{
+                        color: #1A1A1A;
+                        font-family: Ubuntu;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 130%; /* 65px */
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin-top: 160px;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                    .grid-container{                    
+                        margin-top: 85px;
+                        display: grid;
+                        grid-template-columns: 410px 410px 410px;
+                        grid-template-rows: 420px 420px;
+                        grid-column-gap: 30px;
+                        grid-row-gap: 35px;
+
+                        .service-card{
+                            background-color: #fff;
+                            position: relative;
+                            border-radius: 10px;
+                            padding: 36px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                            transition: transform .1s;
+
+                            img{
+                                position: absolute;
+                                right: 30px;
+                                top: 30px;
+                            }
+                            h3{
+                                color: #1A1A1A;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 110%; 
+                            }
+                            p{
+                                color: #1A1A1A;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 160%;
+                                margin-top: 25px;
+                                flex: auto;
+                            }
+                            .more-div{
+                                height: 80px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                
+                                a{
+                                    margin-bottom: 15px;
+                                    color: #9166F0;
+                                    font-family: Ubuntu;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 160%;
+                                    text-decoration: none; 
+                                }
+                            }                    
+                            button{
+                                width: 330px;
+                                height: 70px;
+                                padding: 20px 34px 21px 34px;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 5px;
+                                background: linear-gradient(276deg, #9166F0 8.77%, #633BBC 85.8%);  
+                                border: 0;
+                                transition: .5s;
+                                color: #FFF;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 130%;                                            
+                            }
+                            button:hover{                           
+                                background-color: #ffffff00;                            
+                                background-position: 330px;
+                                color: #FFF;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 18px; 
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 130%;
+                            }
+                        }
+                        .service-card:hover{
+                            transform: translateY(-5px);
+                        }
+                        #service-card-4{
+                            h3{
+                                width: 358px;
+                            }
+                        }
                     }
                 }
             }
         }
+        
         .footer{
 
         }
@@ -376,5 +542,23 @@ html{
     }
     to{
         transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes circle-anim{
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(0, -5%);
+    }
+    50%{
+        transform: translate(10%, 10%);
+    }
+    75%{
+        transform: translate(0%, 5%);
+    }
+    100%{
+        transform: translate(0, 0, );
     }
 }
