@@ -807,6 +807,37 @@ html{
                     }
                 }
             }
+            .statistics{
+                height: 400px;
+                .statistics-inside{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+
+                    .statistics-header{
+                        h2{
+                            color: #1A1A1A;
+                            font-family: Ubuntu, sans-serif;
+                            font-size: 50px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 120%; /* 60px */
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                    }
+                    .grid-container{
+                        display: grid;
+                        grid-template-columns: 204px;
+                        grid-template-rows: 256px 256px 256px 256px;
+                        
+                        .statistics-grid-element{
+                            
+                        }
+                    }
+                }
+            }
+    
         }
         
         .footer{
