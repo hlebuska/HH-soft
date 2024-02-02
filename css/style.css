@@ -748,9 +748,11 @@ html body .main .statistics {
   height: 400px;
 }
 html body .main .statistics .statistics-inside {
+  height: 330px;
   display: flex;
   flex-direction: column;
   align-self: center;
+  justify-content: space-between;
 }
 html body .main .statistics .statistics-inside .statistics-header h2 {
   color: #1A1A1A;
@@ -764,9 +766,206 @@ html body .main .statistics .statistics-inside .statistics-header h2 {
 }
 html body .main .statistics .statistics-inside .grid-container {
   display: grid;
-  grid-template-columns: 204px;
-  grid-template-rows: 256px 256px 256px 256px;
+  grid-template-columns: 270px 270px 270px 270px;
+  grid-template-rows: 204px;
+  grid-column-gap: 93px;
 }
+html body .main .statistics .statistics-inside .grid-container .statistics-grid-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+html body .main .statistics .statistics-inside .grid-container .statistics-grid-element h3 {
+  width: 270px;
+  height: 204px;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 170px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 221px */
+  letter-spacing: -17px;
+  text-transform: uppercase;
+  background: linear-gradient(276deg, #9166F0 8.77%, #210C51 85.8%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+html body .main .statistics .statistics-inside .grid-container .statistics-grid-element h3 span {
+  font-family: Ubuntu;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 91px */
+  letter-spacing: -7px;
+  text-transform: uppercase;
+  background: linear-gradient(276deg, #9166F0 8.77%, #210C51 85.8%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding-bottom: 50px;
+}
+html body .main .statistics .statistics-inside .grid-container .statistics-grid-element p {
+  color: #1A1A1A;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+html body .main .tutorials {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+html body .main .tutorials .tutorials-inside {
+  height: 616px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+html body .main .tutorials .tutorials-inside .tutorials-header h2 {
+  color: #1A1A1A;
+  font-family: Ubuntu, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 60px */
+  text-transform: uppercase;
+  text-align: center;
+}
+html body .main .tutorials .tutorials-inside .grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 240px;
+  grid-column-gap: 30px;
+  padding-top: 55px;
+}
+html body .main .tutorials .tutorials-inside .grid-container .tutorials-grid-element {
+  width: 300px;
+  height: 240px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 10px 60px 0px rgba(28, 45, 70, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  transition: 0.25s;
+}
+html body .main .tutorials .tutorials-inside .grid-container .tutorials-grid-element img {
+  position: absolute;
+  top: -55px;
+  left: 20px;
+}
+html body .main .tutorials .tutorials-inside .grid-container .tutorials-grid-element h3 {
+  color: #1A1A1A;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-top: 105px;
+}
+html body .main .tutorials .tutorials-inside .grid-container .tutorials-grid-element button {
+  width: 260px;
+  height: 50px;
+  margin-top: 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: linear-gradient(276deg, #9166F0 8.77%, #633BBC 85.8%);
+  border: 0;
+  transition: 0.5s;
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+html body .main .tutorials .tutorials-inside .grid-container .tutorials-grid-element button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  background-position: 260px;
+}
+html body .main .tutorials .tutorials-inside .grid-container .tutorials-grid-element:hover {
+  transform: translateY(-5px);
+}
+html body .main .tutorials .tutorials-inside .show-more-button {
+  width: 330px;
+  height: 70px;
+  padding: 20px 34px 21px 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: linear-gradient(276deg, #35187a 8.77%, #9166F0 85.8%);
+  border: 0;
+  transition: 0.5s;
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+html body .main .tutorials .tutorials-inside .show-more-button:hover {
+  background-position: 330px;
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+html body .main .discuss {
+  height: 650px;
+}
+html body .main .discuss .discuss-inside {
+  height: 500px;
+}
+html body .main .discuss .discuss-inside .discuss-header h2 {
+  color: #1A1A1A;
+  font-family: Ubuntu, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 60px */
+  text-transform: uppercase;
+  text-align: center;
+}
+html body .footer {
+  height: 100px;
+  background-color: #010423;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+html body .footer .footer-inside {
+  display: flex;
+  justify-content: space-between;
+}
+html body .footer .footer-inside .rights, html body .footer .footer-inside .policies, html body .footer .footer-inside .dev {
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  text-decoration: none;
+}
+html body .footer .footer-inside .policies, html body .footer .footer-inside span {
+  color: #9166f0;
+}
+
 .container {
   width: 1290px;
   margin-left: auto;

@@ -810,9 +810,11 @@ html{
             .statistics{
                 height: 400px;
                 .statistics-inside{
+                    height: 330px;
                     display: flex;
                     flex-direction: column;
                     align-self: center;
+                    justify-content: space-between;
 
                     .statistics-header{
                         h2{
@@ -828,11 +830,196 @@ html{
                     }
                     .grid-container{
                         display: grid;
-                        grid-template-columns: 204px;
-                        grid-template-rows: 256px 256px 256px 256px;
-                        
+                        grid-template-columns: 270px 270px 270px 270px;
+                        grid-template-rows: 204px;
+                        grid-column-gap: 93px;
+
+
                         .statistics-grid-element{
-                            
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+                            h3{
+                                width: 270px;
+                                height: 204px;
+                                text-align: center;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 170px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 130%; /* 221px */
+                                letter-spacing: -17px;
+                                text-transform: uppercase;
+                                background: linear-gradient(276deg, #9166F0 8.77%, #210C51 85.8%);
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                color: transparent;
+                                display: inline-block;
+
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+
+                                span{
+                                    font-family: Ubuntu;
+                                    font-size: 70px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 130%; /* 91px */
+                                    letter-spacing: -7px;
+                                    text-transform: uppercase;
+                                    background: linear-gradient(276deg, #9166F0 8.77%, #210C51 85.8%);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                    color: transparent;
+                                    display: inline-block;
+                                    padding-bottom: 50px;
+                                }
+                            }
+                            p{
+                                color: #1A1A1A;
+                                text-align: center;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 160%;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .tutorials{
+                height: 750px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .tutorials-inside{
+                    height: 616px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .tutorials-header{
+                        h2{
+                            color: #1A1A1A;
+                            font-family: Ubuntu, sans-serif;
+                            font-size: 50px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 120%; /* 60px */
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                    }
+                    .grid-container{
+                        display: grid;
+                        grid-template-columns: 300px 300px 300px 300px;
+                        grid-template-rows: 240px;
+                        grid-column-gap: 30px;
+                        padding-top: 55px;
+
+                        .tutorials-grid-element{
+                            width: 300px;
+                            height: 240px;
+                            border-radius: 10px;
+                            background: #FFF;
+                            box-shadow: 0px 10px 60px 0px rgba(28, 45, 70, 0.10);
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            align-items: center;
+                            transition: 0.25s;
+
+                            img{
+                                position: absolute;
+                                top: -55px;
+                                left: 20px;
+                            }
+                            h3{
+                                color: #1A1A1A;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 130%;
+                                margin-top: 105px;
+                            }
+                            button{
+                                width: 260px;
+                                height: 50px;
+                                margin-top: 23px;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 5px;
+                                background: linear-gradient(276deg, #9166F0 8.77%, #633BBC 85.8%);  
+                                border: 0;
+                                transition: .5s;
+                                color: #FFF;
+                                font-family: Ubuntu, sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 130%;                                          
+                            }
+                            button:hover{                           
+                                background-color: #ffffff00;                            
+                                background-position: 260px;
+                            }
+
+                        }
+                        .tutorials-grid-element:hover {
+                            transform: translateY(-5px);
+                        }
+                    }
+                    .show-more-button{
+                        width: 330px;
+                        height: 70px;
+                        padding: 20px 34px 21px 34px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+                        background: linear-gradient(276deg, #35187a 8.77%, #9166F0 85.8%);
+                        border: 0;
+                        transition: .5s;
+                        color: #FFF;
+                        font-family: Ubuntu, sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 130%;                                            
+                    }
+                    .show-more-button:hover{                                           
+                        background-position: 330px;
+                        color: #FFF;
+                        font-family: Ubuntu, sans-serif;
+                        font-size: 18px; 
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 130%;
+                    }
+                }
+            }
+            .discuss{
+                height: 650px;
+                
+                .discuss-inside{
+                    height: 500px;
+
+                    .discuss-header{
+                        h2{
+                            color: #1A1A1A;
+                            font-family: Ubuntu, sans-serif;
+                            font-size: 50px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 120%; /* 60px */
+                            text-transform: uppercase;
+                            text-align: center;
                         }
                     }
                 }
@@ -841,7 +1028,29 @@ html{
         }
         
         .footer{
+            height: 100px;
+            background-color: #010423;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            .footer-inside{
+                display: flex;
+                justify-content: space-between;
 
+                .rights, .policies, .dev{
+                    color: #FFF;
+                    font-family: Ubuntu, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 130%; 
+                    text-decoration: none;
+                }
+                .policies, span{
+                    color: #9166f0;
+                }
+            }
         }
     }
 }
@@ -876,6 +1085,6 @@ html{
         transform: translate(0%, 5%);
     }
     100%{
-        transform: translate(0, 0, );
+        transform: translate(0, 0);
     }
 }
