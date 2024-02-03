@@ -932,6 +932,9 @@ html body .main .discuss {
 html body .main .discuss .discuss-inside {
   height: 500px;
 }
+html body .main .discuss .discuss-inside .discuss-header {
+  margin-top: 60px;
+}
 html body .main .discuss .discuss-inside .discuss-header h2 {
   color: #1A1A1A;
   font-family: Ubuntu, sans-serif;
@@ -941,6 +944,249 @@ html body .main .discuss .discuss-inside .discuss-header h2 {
   line-height: 120%; /* 60px */
   text-transform: uppercase;
   text-align: center;
+}
+html body .main .discuss .discuss-inside .form {
+  height: 370px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-evenly;
+}
+html body .main .discuss .discuss-inside .form .form-inside {
+  display: grid;
+  grid-template-rows: 190px 70px 70px;
+  grid-template-columns: 320px 320px;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+html body .main .discuss .discuss-inside .form .form-inside .task {
+  border: 1px solid #9166f0;
+  border-radius: 10px;
+  height: 190px;
+  grid-row: 1;
+  grid-column: 1/3;
+  font-family: Ubunta, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #5b5b5b;
+  padding: 20px;
+  resize: none;
+}
+html body .main .discuss .discuss-inside .form .form-inside .task:focus {
+  outline-color: #9166f0;
+}
+html body .main .discuss .discuss-inside .form .form-inside input {
+  border: 1px solid #9166f0;
+  border-radius: 10px;
+  width: 320px;
+  height: 70px;
+  font-family: Ubunta, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #5b5b5b;
+  padding: 20px;
+}
+html body .main .discuss .discuss-inside .form .form-inside input:focus {
+  outline-color: #9166f0;
+}
+html body .main .discuss .discuss-inside .admin-info {
+  width: 330px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body .main .discuss .discuss-inside .admin-info .admin {
+  display: flex;
+  justify-content: space-between;
+}
+html body .main .discuss .discuss-inside .admin-info .admin img {
+  border-radius: 10px;
+}
+html body .main .discuss .discuss-inside .admin-info .admin h3.admin-name {
+  font-family: Ubunta, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+  color: #1a1a1a;
+  padding-right: 10px;
+}
+html body .main .discuss .discuss-inside .admin-info .admin p.title {
+  font-family: Ubunta, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1a1a1a;
+}
+html body .main .discuss .discuss-inside .admin-info .admin-contacts h3 {
+  font-family: Ubunta, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #191919;
+  margin-top: 7px;
+}
+html body .main .discuss .discuss-inside .admin-info .admin-contacts p {
+  font-family: Ubunta, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1a1a1a;
+}
+html body .main .discuss .discuss-inside .admin-info .discuss-project-button {
+  border-radius: 5px;
+  padding: 20px 34px 21px 34px;
+  width: 330px;
+  height: 70px;
+  border: 0;
+  background: linear-gradient(276deg, #210C51 8.77%, #9166F0 85.8%);
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  transition: 0.5s;
+  filter: drop-shadow(3px 5px 10px rgba(145, 102, 240, 0.25));
+}
+html body .main .discuss .discuss-inside .admin-info .discuss-project-button:hover {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  background-position: 330px;
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+html body .main .discuss .discuss-inside .admin-info .policy-agreement {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  color: #656565;
+}
+html body .main .discuss .discuss-inside .admin-info .policy-agreement a {
+  color: #9166F0;
+}
+html body .contact {
+  height: 143px;
+  background-color: #010423;
+}
+html body .contact .contact-inside {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body .contact .contact-inside .logo {
+  width: 213px;
+  height: 40px;
+}
+html body .contact .contact-inside .nav {
+  width: 315px;
+}
+html body .contact .contact-inside .nav .nav-inside {
+  width: 315px;
+  height: 46px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+html body .contact .contact-inside .nav .nav-inside .nav-element a {
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  text-decoration: none;
+}
+html body .contact .contact-inside .nav .nav-inside .nav-element a:hover {
+  color: #9166F0;
+  text-decoration: underline;
+}
+html body .contact .contact-inside .contacts {
+  height: 100%;
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body .contact .contact-inside .contacts .socials {
+  height: 46px;
+  width: 120px;
+  position: relative;
+}
+html body .contact .contact-inside .contacts .socials #logo-vk {
+  position: absolute;
+  z-index: 3;
+}
+html body .contact .contact-inside .contacts .socials #logo-yt {
+  position: absolute;
+  left: 25%;
+  z-index: 2;
+}
+html body .contact .contact-inside .contacts .socials #logo-tg {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+html body .contact .contact-inside .contacts .socials .logo-socials-img {
+  width: 46px;
+  height: 46px;
+}
+html body .contact .contact-inside .contacts .number {
+  display: flex;
+  flex-direction: column;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  color: #b6b6b6;
+}
+html body .contact .contact-inside .contacts .number a {
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-decoration: none;
+}
+html body .contact .contact-inside .contacts .number a:hover {
+  color: #9166F0;
+  text-decoration: underline;
+}
+html body .contact .contact-inside .contacts .email {
+  display: flex;
+  flex-direction: column;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  color: #b6b6b6;
+}
+html body .contact .contact-inside .contacts .email a {
+  color: #FFF;
+  font-family: Ubuntu, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-decoration: none;
+}
+html body .contact .contact-inside .contacts .email a:hover {
+  color: #9166F0;
+  text-decoration: underline;
+}
+html body .contact hr {
+  border-color: rgba(255, 255, 255, 0.2117647059);
+  position: relative;
+  z-index: 10;
 }
 html body .footer {
   height: 100px;
